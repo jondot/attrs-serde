@@ -1,0 +1,9 @@
+.pytest_cache/
+dist/
+__pycache__
+.tox/
+.tool-versions
+.vscode/
+.testmondata
+*.pyc
+node_modules/

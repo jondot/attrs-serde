@@ -1,0 +1,26 @@
+{
+  "name": "attrs-serde",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dotan Nahum <jondotan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-pytest": "^0.7.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "py"
+    ],
+    "runner": "jest-pytest",
+    "testPathIgnorePatterns": [
+      "snap_.*\\.py"
+    ],
+    "testMatch": [
+      "tests/test_*\\.py"
+    ]
+  }
+}
