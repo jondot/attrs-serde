@@ -30,7 +30,7 @@ Person(name=John phone=555-112233)
 Install using pip/pipenv/etc. (we recommend [poetry](https://github.com/sdispater/poetry) for sane dependency management):
 
 ```
-$ poetry add attrs_serde
+$ poetry add attrs-serde
 ```
 
 Decorate with `serde` for automatic `to_dict` and `from_dict`. Provide paths in `metadata`:
@@ -41,6 +41,8 @@ Decorate with `serde` for automatic `to_dict` and `from_dict`. Provide paths in 
 Example:
 
 ```py
+from attrs_serde import serde
+from attr import attrs, attrib
 @serde
 @attrs
 class Person(object):
