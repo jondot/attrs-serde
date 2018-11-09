@@ -20,3 +20,9 @@ snapshots['test_ser 1'] = {
         'phone': '555-334455'
     }
 }
+
+snapshots['test_quirky_object 1'] = {
+    'name': 'John',
+    'phone': '555-112233',
+    'zip': 56000
+}

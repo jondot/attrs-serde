@@ -21,7 +21,7 @@ class Contact(object):
     name = attrib(metadata={"to": name_path, "from": name_path})
     phone = attrib(metadata={"to": phone_path, "from": phone_path})
     zip_code = attrib(default=56000, metadata={"to": phone_path})
-    address = attrib()
+    address = attrib(default="Abby Rd.")
 
 
 def test_deser(snapshot):
