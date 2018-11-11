@@ -17,11 +17,23 @@ class Person(object):
 
 @serde
 @attrs
-class Contact(object):
-    name = attrib(metadata={"to": name_path, "from": name_path})
-    phone = attrib(metadata={"to": phone_path, "from": phone_path})
+class Contact(Person):
     zip_code = attrib(default=56000, metadata={"to": phone_path})
     address = attrib(default="Abby Rd.")
+
+
+@serde(from_key="get", to_key="set")
+@attrs
+class GetSet(object):
+    name = attrib(metadata={"set": ["nameeee"], "get": ["name"]})
+
+    phone = attrib(metadata={"set": ["phoneeee"], "get": ["phone"]})
+
+
+def test_from_to_keys(snapshot):
+    g = GetSet.from_dict({"name": "John", "phone": "555-1111"})
+    snapshot.assert_match({"name": g.name, "phone": g.phone})
+    snapshot.assert_match(g.to_dict())
 
 
 def test_deser(snapshot):

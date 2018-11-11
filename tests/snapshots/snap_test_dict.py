@@ -26,3 +26,13 @@ snapshots['test_quirky_object 1'] = {
     'phone': '555-112233',
     'zip': 56000
 }
+
+snapshots['test_from_to_keys 1'] = {
+    'name': 'John',
+    'phone': '555-1111'
+}
+
+snapshots['test_from_to_keys 2'] = {
+    'nameeee': 'John',
+    'phoneeee': '555-1111'
+}

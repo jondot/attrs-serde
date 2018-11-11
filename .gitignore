@@ -7,3 +7,4 @@ __pycache__
 .testmondata
 *.pyc
 node_modules/
+attrs_serde.egg-info/

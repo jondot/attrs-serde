@@ -50,6 +50,17 @@ class Person(object):
     phone = attrib(metadata={"to": phone_path, "from": phone_path})
 ```
 
+Custom `from` and `to` keys (in case you or a different extension use those):
+
+```py
+from attrs_serde import serde
+from attr import attrs, attrib
+@serde(from_key="get", to_key="set")
+@attrs
+class Person(object):
+    name = attrib(metadata={"get": name_path, "set": name_path})
+    phone = attrib(metadata={"get": phone_path, "set": phone_path})
+```
 
 ## Performance
 
