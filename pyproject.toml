@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "attrs-serde"
-version = "0.1.1"
+version = "0.2.1"
 authors = ["Dotan Nahum <jondotan@gmail.com>"]
 description = "A serialization addon for attrs"
 
