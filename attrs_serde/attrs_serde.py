@@ -27,6 +27,9 @@ def serde(cls=None, from_key="from", to_key="to"):
 
         def to_dict(self):
             d = asdict(self)
+            if not to_fields:
+                return d
+
             return reduce(
                 lambda acc, f: update_in(acc, f[1], lambda _: d[f[0].name]),
                 to_fields,

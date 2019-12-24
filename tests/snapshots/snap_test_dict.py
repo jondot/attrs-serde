@@ -36,3 +36,13 @@ snapshots['test_from_to_keys 2'] = {
     'nameeee': 'John',
     'phoneeee': '555-1111'
 }
+
+snapshots['test_ser_with_default_values 1'] = {
+    'name': 'Tel-Aviv',
+    'zipcode': '6100000'
+}
+
+snapshots['test_deser_with_default_values 1'] = {
+    'name': 'Tel-Aviv',
+    'zipcode': '6100000'
+}
