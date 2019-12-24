@@ -8,3 +8,4 @@ __pycache__
 *.pyc
 node_modules/
 attrs_serde.egg-info/
+.idea/
