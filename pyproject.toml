@@ -17,7 +17,7 @@ keywords = ["attrs", "serialization", "dict", "data", "nested", "functional"]
 [tool.poetry.dependencies]
 python = "*"
 toolz = "^0.9.0"
-cytoolz = "^0.9.0"
+cytoolz = "^0.11.0"
 attrs = "^19.1"
 
 [tool.poetry.dev-dependencies]
